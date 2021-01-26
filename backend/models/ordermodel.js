@@ -30,25 +30,42 @@ const orderSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    paymentMethod: {
-      type: String,
-      required: true,
+    paymentResult: {
+      id: { type: String },
+      status: { type: String },
+      update_time: { type: String },
+      email_address: { type: String },
     },
-    paymentMethod: {
-      type: String,
+    texPrice: {
+      type: Number,
       required: true,
+      default: 0.0,
     },
-    paymentMethod: {
-      type: String,
+    shippingPrice: {
+      type: Number,
       required: true,
+      default: 0.0,
     },
-    paymentMethod: {
-      type: String,
+    totalPrice: {
+      type: Number,
       required: true,
+      default: 0.0,
     },
-    paymentMethod: {
-      type: String,
+    isPaid: {
+      type: Boolean,
       required: true,
+      default: false,
+    },
+    paidAt: {
+      type: Date,
+    },
+    isDelivered: {
+      type: Boolean,
+      required: true,
+      default: false,
+    },
+    deliveredAt: {
+      type: Date,
     },
   },
   {
