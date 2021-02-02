@@ -1,4 +1,4 @@
-import React, { useStste, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { PayPalButton } from 'react-paypal-button-v2'
 import { Link } from 'react-router-dom'
@@ -12,7 +12,7 @@ import { ORDER_PAY_RESET } from '../constants/orderConstants'
 const OrderScreen = ({ match }) => {
   const orderId = match.params.id
 
-  const [sdkReady, setSdkReady] = useStste()
+  const [sdkReady, setSdkReady] = useState(false)
 
   const dispatch = useDispatch()
 
@@ -23,7 +23,7 @@ const OrderScreen = ({ match }) => {
   const { loading: loadingPay, success: successPay } = orderPay
 
   if (!loading) {
-    //Calculate Price
+    //   Calculate prices
     const addDecimals = (num) => {
       return (Math.round(num * 100) / 100).toFixed(2)
     }
@@ -106,7 +106,7 @@ const OrderScreen = ({ match }) => {
               {order.isPaid ? (
                 <Message variant='success'>Paid on {order.paidAt}</Message>
               ) : (
-                <Message variant='danger'>Not paid</Message>
+                <Message variant='danger'>Not Paid</Message>
               )}
             </ListGroup.Item>
 
@@ -115,7 +115,7 @@ const OrderScreen = ({ match }) => {
               {order.orderItems.length === 0 ? (
                 <Message>Order is empty</Message>
               ) : (
-                <listGroup variant='flush'>
+                <ListGroup variant='flush'>
                   {order.orderItems.map((item, index) => (
                     <ListGroup.Item key={index}>
                       <Row>
@@ -138,7 +138,7 @@ const OrderScreen = ({ match }) => {
                       </Row>
                     </ListGroup.Item>
                   ))}
-                </listGroup>
+                </ListGroup>
               )}
             </ListGroup.Item>
           </ListGroup>
