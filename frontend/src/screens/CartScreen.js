@@ -34,7 +34,7 @@ const CartScreen = ({ match, location, history }) => {
       <Col md={8}>
         <h1>Shopping Cart</h1>
         {cartItems.length === 0 ? (
-          <Message variant='primary'>
+          <Message>
             Your cart is empty <Link to='/'>Go Back</Link>
           </Message>
         ) : (
@@ -97,7 +97,7 @@ const CartScreen = ({ match, location, history }) => {
             <ListGroup.Item>
               <Button
                 type='button'
-                className='btn-block'
+                className='btn-info'
                 disabled={cartItems.length === 0}
                 onClick={checkoutHandler}
               >
