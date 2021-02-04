@@ -25,6 +25,9 @@ const Product = ({ product }) => {
         </Card.Text>
 
         <Card.Text as='h3'>₹{product.price}</Card.Text>
+        <Card.Text as='h6'>
+          {product.countInStock > 0 ? 'In Stock' : 'Out Of Stock'}
+        </Card.Text>
       </Card.Body>
     </Card>
   )
