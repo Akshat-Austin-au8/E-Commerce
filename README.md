@@ -10,9 +10,6 @@ A Peer to peer shopping site website. The objective of this website/project is t
 👤 Akshat Austin 
 Github: [@akshat-austin-au8](https://github.com/akshat-austin-au8)
 
-👤 Vinit Poojray 
-Github: [@vinit-poojary-au8](https://github.com/vinit-poojary-au8)
-
 ---
 
 ## Requirements
