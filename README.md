@@ -3,6 +3,12 @@ A Peer to peer shopping site website. The objective of this website/project is t
 
 ---
 
+## Full Project Website Link Hosted On Heroku -
+
+- #### Visit Here [EasyToBuy](https://ezy2buy.herokuapp.com/)
+
+---
+
 # Project Authors
 
 #### Check Us Out
