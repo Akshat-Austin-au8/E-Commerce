@@ -1,5 +1,5 @@
 # EasyToBuy Application
-A Peer to peer shopping website. The objective of this website/project is to provide a social platform to purchase any type of grocery item at an effective price
+A Peer to peer shopping website. The objective of this project is to provide a social platform to purchase any type of grocery item at an effective price
 
 ---
 
