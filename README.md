@@ -69,7 +69,7 @@ $ npm i
 
 ## Configuration for the App
 
-Open `project-pijush-konar-au7` then create and **dev.env** file in the root and edit it with your credentials. You will need:
+Open `project-akshat-austin-au7` then create and **dev.env** file in the root and edit it with your credentials. You will need:
 
 - PORT=`Your Desired Port`
 - MONGO_URI=`Your Database Address`
